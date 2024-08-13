@@ -1,3 +1,36 @@
+// success section video
+document.addEventListener("DOMContentLoaded", function () {
+  const videoWrappers = document.querySelectorAll(".video-wrapper");
+  let currentPlayingVideo = null;
+
+  videoWrappers.forEach((wrapper) => {
+    wrapper.addEventListener("click", function () {
+      const videoId = this.getAttribute("data-video-id");
+      const videoElement = document.getElementById(videoId);
+
+      if (currentPlayingVideo && currentPlayingVideo !== videoElement) {
+        currentPlayingVideo.pause();
+        currentPlayingVideo.currentTime = 0;
+        currentPlayingVideo.parentElement.querySelector(
+          ".play-icon"
+        ).style.display = "block";
+      }
+
+      if (videoElement.paused) {
+        videoElement.play();
+        this.querySelector(".play-icon").style.display = "none";
+        currentPlayingVideo = videoElement;
+      } else {
+        videoElement.pause();
+        videoElement.currentTime = 0;
+        this.querySelector(".play-icon").style.display = "block";
+        currentPlayingVideo = null;
+      }
+    });
+  });
+});
+
+//  header-video
 function playVideo(videoId, button) {
   const video = document.getElementById(videoId);
   video.play();
@@ -19,7 +52,7 @@ function playVideo(videoId, button) {
 }
 
 document.getElementById("playIcon").addEventListener("click", () => {
-  playVideo("diligenceVideo", document.getElementById("playIcon"));
+  playVideo("header-video", document.getElementById("playIcon"));
 });
 
 // particle js
