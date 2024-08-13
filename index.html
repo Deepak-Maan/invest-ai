@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Invest AI</title>
+    <link rel="shortcut icon" href="./assets/images/svg/bottom-faced-arrow.svg" type="image/x-icon">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'light-blue': '#00BFFF',
+                        'blue': '#00A4FF',
+                        'green': '#01D61B',
+                        'light-black': '#29333A',
+                    },
+                    fontSize: {
+
+                        'custom-lg': '22px',
+                        'custom-xl': '28px',
+                    },
+
+                    fontFamily: {
+                        roboto: ['Roboto', 'sans-serif'],
+                        oxygen: ['Oxygen', 'sans-serif'],
+                        oxanium: ['Oxanium', 'sans-serif'],
+                        lato: ['Lato', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'blue-button': '0px 4px 25px 0px #00BFFF',
+                    },
+                    lineHeight: {
+                        '120': '120%',
+                        '130': '130%',
+                        '140': '140%',
+                        '150': '150%',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="relative overflow-hidden">
+        <div id="particles-js"></div>
+        <div class="count-particles"> <span class="js-count-particles"></span></div>
+        <span class="absolute top-5 left-5 cursor-pointer"><svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0.400133 2.73102V0.733019H13.7921V2.73102H0.400133ZM0.400133 6.83502V4.83702H13.7921V6.83502H0.400133ZM0.400133 10.939V8.94102H13.7921V10.939H0.400133Z"
+                    fill="white" />
+            </svg>
+        </span>
+        <div class="container px-4 lg:px-3 mx-auto pt-4 md:pt-5">
+
+            <div class="relative">
+                <img class="size-[116px] cursor-pointer mx-auto" src="./assets/images/svg/bottom-faced-arrow.svg"
+                    alt="page logo">
+                <h3
+                    class="text-2xl white-text-shadow uppercase pt-3 sm:text-4xl pb-3 font-semibold font-oxanium !leading-120 text-white text-center ">
+                    AI
+                    Arbitrage Method Pro</h3>
+                <hr class="max-w-[880px] h-[1px] bg-white w-full mx-auto">
+                <h3
+                    class="text-2xl sm:text-4xl pt-4 md:pt-10 lg:pt-12 blue-text-shadow uppercase font-bold font-oxygen pb-9 lg:pb-5 !leading-130 text-white text-center">
+                    AI POWERED Arbitrage Method Pro</h3>
+                <p
+                    class=" font-roboto blue-text-shadow font-roboto text-lg sm:text-custom-xl font-bold text-white text-center pb-3 md:pb-4 leading-120">
+                    Tap into
+                    AI for Wealth Building With The World's #1 AI Method</p>
+                <p
+                    class="text-center font-normal text-xl sm:text-2xl capitalize leading-120 pb-5 mx-auto max-w-[1100px] text-white font-roboto">
+                    Watch Your Investment Skyrocket Effortlessly with a Simple AI System that Capitalizes on
+                    Price Differences! Investors Have Seen a Remarkable <span class="font-semibold text-blue">36.5%+
+                    </span> Gains in Less Than 24 Hours! <br class="hidden lg:block" />
+                    Watch the Video Below to Discover How</p>
+            </div>
+            <div class="flex justify-center relative">
+                <video id="header-video"
+                    class="rounded-md shadow-blue-button lg:rounded-3xl max-w-[982px] w-full max-h-[553px]"
+                    src="./assets/videos/meeting-video.mp4" controls
+                    poster="./assets/images/webp/video-thumbnail.webp"></video>
+                <span id="playIcon" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer ">
+                    <svg class="size-10 lg:size-[76px]" viewBox="0 0 100 101" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50.2197" r="50" fill="white" fill-opacity="0.53" />
+                        <path
+                            d="M69.25 50.2197C69.2511 50.6866 69.1314 51.1458 68.9025 51.5527C68.6736 51.9596 68.3433 52.3003 67.9437 52.5418L43.18 67.6908C42.7625 67.9465 42.2843 68.0861 41.7948 68.0951C41.3053 68.1042 40.8223 67.9824 40.3956 67.7424C39.973 67.5061 39.6209 67.1615 39.3757 66.744C39.1304 66.3265 39.0007 65.8513 39 65.3671V35.0724C39.0007 34.5882 39.1304 34.1129 39.3757 33.6954C39.6209 33.278 39.973 32.9334 40.3956 32.6971C40.8223 32.457 41.3053 32.3353 41.7948 32.3443C42.2843 32.3534 42.7625 32.493 43.18 32.7486L67.9437 47.8977C68.3433 48.1391 68.6736 48.4799 68.9025 48.8868C69.1314 49.2937 69.2511 49.7529 69.25 50.2197Z"
+                            fill="#00A4FF" />
+                    </svg>
+                </span>
+            </div>
+            <a href="#"
+                class="py-3 px-7 shadow-blue-button justify-center items-center hover:shadow-none duration-300 flex flex-col mx-auto xl:h-[100px] leading-140 max-w-[450px] rounded-full text-white border font-bold font-oxygen text-lg lg:text-custom-lg bg-blue mt-9 border-light-blue bg-opacity-[24%] ">
+                <span class="flex items-center gap-3"><span><svg class="size-5 lg:size-7" viewBox="0 0 28 29"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.1844 0.9375C21.6766 0.9375 27.7469 7.00781 27.7469 14.5C27.7469 21.9922 21.6766 28.0625 14.1844 28.0625C6.69219 28.0625 0.621876 21.9922 0.621876 14.5C0.621876 7.00781 6.69219 0.9375 14.1844 0.9375ZM12.5984 8.8125L16.7 12.75H6.74688C5.98125 12.75 5.43438 13.3516 5.43438 14.0625V14.9375C5.43438 15.7031 5.98125 16.25 6.74688 16.25H16.7L12.5984 20.2422C12.0516 20.7344 12.0516 21.6094 12.5438 22.1016L13.1453 22.7031C13.6922 23.1953 14.5125 23.1953 15.0047 22.7031L22.2781 15.4297C22.7703 14.9375 22.7703 14.1172 22.2781 13.625L15.0047 6.35156C14.5125 5.80469 13.6922 5.80469 13.1453 6.35156L12.5438 6.95312C12.0516 7.44531 12.0516 8.32031 12.5984 8.8125Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                    Unlimited Access For Free!
+                </span>
+                <span class="text-center font-roboto text-base sm:text-lg leading-120 font-normal text-white">Risk
+                    Free
+                    Strategy</span>
+
+            </a>
+            <p
+                class="text-lg sm:text-xl flex items-start text-white text-center mx-auto font-roboto font-normal max-w-[1088px] !leading-140 mt-11 mb-8 md:mb-10 lg:mb-12">
+                <span><svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.5969 13.285C19.9094 13.285 20.2219 13.5975 20.2219 13.91V15.16C20.2219 15.5116 19.9094 15.785 19.5969 15.785H1.47188C0.76875 15.785 0.221875 15.2382 0.221875 14.535V1.41003C0.221875 1.09753 0.495313 0.785034 0.846875 0.785034H2.09688C2.40938 0.785034 2.72188 1.09753 2.72188 1.41003V13.285H19.5969ZM18.3469 2.03503C18.6594 2.03503 18.9719 2.34753 18.9328 2.66003V7.30847C18.9328 8.12878 17.9563 8.55847 17.3703 7.97253L16.0813 6.68347L12.3313 10.4335C11.8625 10.9413 11.0422 10.9413 10.5734 10.4335L7.72188 7.58191L5.88594 9.37878C5.65156 9.61316 5.26094 9.61316 5.02656 9.37878L4.12813 8.48035C3.89375 8.24597 3.89375 7.85535 4.12813 7.62097L6.82344 4.92566C7.29219 4.41785 8.1125 4.41785 8.58125 4.92566L11.4719 7.77722L14.3234 4.92566L13.0344 3.6366C12.4484 3.05066 12.8781 2.03503 13.6984 2.03503H18.3469Z"
+                            fill="#00A4FF" />
+                    </svg>
+                </span> Just apply this simple AI Method, and you'll instantly see where to buy, sell, and take
+                profit
+                within
+                seconds. With up to 93.2% daily accuracy, our AI system simplifies your decisions and helps you
+                achieve consistent gains with minimal effort. Start today and experience how effortless and
+                profitable your account will grow using AI-Arbitrage.
+            </p>
+            <h3
+                class="text-white text-center mx-auto blue-text-shadow capitalize font-roboto font-bold mb-6 mt-1 max-w-[885px] text-2xl lg:text-4xl !leading-140 ">
+                The <span class="text-green">world's </span> must trusted AI method, proved by Experts all over the
+                world.</h3>
+            <div class="flex flex-col max-w-[827px] mx-auto">
+                <div class="flex items-start mb-3 md:mb-4 gap-3 xl:h- md:gap-5">
+                    <span class="size-[22px]">
+                        <svg class="w-4 md:w-6 h-3 md:h-4" viewBox="0 0 23 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.34922 16.8712L1.21641 9.7384C0.786719 9.30872 0.786719 8.57825 1.21641 8.14856L2.76328 6.60168C3.19297 6.172 3.88047 6.172 4.31016 6.60168L9.16563 11.4142L19.4781 1.10168C19.9078 0.671997 20.5953 0.671997 21.025 1.10168L22.5719 2.64856C23.0016 3.07825 23.0016 3.80872 22.5719 4.2384L9.93906 16.8712C9.50938 17.3009 8.77891 17.3009 8.34922 16.8712Z"
+                                fill="#00A4FF" />
+                        </svg>
+
+                    </span>
+                    <p class="font-roboto font-normal text-lg sm:text-custom-lg leading-140 text-white">Extremely
+                        Easy Setup:
+                        Get started in just (1
+                        minute).</p>
+
+                </div>
+                <div class="flex items-start mb-3 md:mb-4 gap-3 xl:h- md:gap-5">
+                    <span class="size-[22px]">
+                        <svg class="w-4 md:w-6 h-3 md:h-4" viewBox="0 0 23 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.34922 16.8712L1.21641 9.7384C0.786719 9.30872 0.786719 8.57825 1.21641 8.14856L2.76328 6.60168C3.19297 6.172 3.88047 6.172 4.31016 6.60168L9.16563 11.4142L19.4781 1.10168C19.9078 0.671997 20.5953 0.671997 21.025 1.10168L22.5719 2.64856C23.0016 3.07825 23.0016 3.80872 22.5719 4.2384L9.93906 16.8712C9.50938 17.3009 8.77891 17.3009 8.34922 16.8712Z"
+                                fill="#00A4FF" />
+                        </svg>
+
+                    </span>
+                    <p class="font-roboto font-normal text-lg sm:text-custom-lg leading-140 text-white">Highly
+                        accuracy.: AI
+                        Arbitrage achieves up to 93.2% daily accuracy.</p>
+
+                </div>
+                <div class="flex items-start mb-3 md:mb-4 gap-3 xl:h- md:gap-5">
+                    <span class="size-[22px]">
+                        <svg class="w-4 md:w-6 h-3 md:h-4" viewBox="0 0 23 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.34922 16.8712L1.21641 9.7384C0.786719 9.30872 0.786719 8.57825 1.21641 8.14856L2.76328 6.60168C3.19297 6.172 3.88047 6.172 4.31016 6.60168L9.16563 11.4142L19.4781 1.10168C19.9078 0.671997 20.5953 0.671997 21.025 1.10168L22.5719 2.64856C23.0016 3.07825 23.0016 3.80872 22.5719 4.2384L9.93906 16.8712C9.50938 17.3009 8.77891 17.3009 8.34922 16.8712Z"
+                                fill="#00A4FF" />
+                        </svg>
+
+                    </span>
+                    <p class="font-roboto font-normal text-lg sm:text-custom-lg leading-140 text-white">Real-Time:
+                        Receive live
+                        AI alerts.</p>
+
+                </div>
+                <div class="flex items-start mb-3 md:mb-4 gap-3 xl:h- md:gap-5">
+                    <span class="size-[22px]">
+                        <svg class="w-4 md:w-6 h-3 md:h-4" viewBox="0 0 23 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.34922 16.8712L1.21641 9.7384C0.786719 9.30872 0.786719 8.57825 1.21641 8.14856L2.76328 6.60168C3.19297 6.172 3.88047 6.172 4.31016 6.60168L9.16563 11.4142L19.4781 1.10168C19.9078 0.671997 20.5953 0.671997 21.025 1.10168L22.5719 2.64856C23.0016 3.07825 23.0016 3.80872 22.5719 4.2384L9.93906 16.8712C9.50938 17.3009 8.77891 17.3009 8.34922 16.8712Z"
+                                fill="#00A4FF" />
+                        </svg>
+
+                    </span>
+                    <p class="font-roboto font-normal text-lg sm:text-custom-lg leading-140 text-white">
+                        Beginner-Friendly:
+                        Perfect for those with zero experience.</p>
+
+                </div>
+                <div class="flex items-start mb-8 lg:mb-12 gap-3 md:gap-5">
+                    <span class="size-[22px]">
+                        <svg class="w-4 md:w-6 h-3 md:h-4" viewBox="0 0 23 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.34922 16.8712L1.21641 9.7384C0.786719 9.30872 0.786719 8.57825 1.21641 8.14856L2.76328 6.60168C3.19297 6.172 3.88047 6.172 4.31016 6.60168L9.16563 11.4142L19.4781 1.10168C19.9078 0.671997 20.5953 0.671997 21.025 1.10168L22.5719 2.64856C23.0016 3.07825 23.0016 3.80872 22.5719 4.2384L9.93906 16.8712C9.50938 17.3009 8.77891 17.3009 8.34922 16.8712Z"
+                                fill="#00A4FF" />
+                        </svg>
+
+                    </span>
+                    <p class="font-roboto font-normal text-lg sm:text-custom-lg leading-140 text-white">
+                        Comprehensive Support:
+                        Includes 1-on-1 calls with your account manager.</p>
+
+                </div>
+                <button
+                    class="rounded-full shadow-blue-button hover:shadow-none duration-300 py-3 font-lato px-6 max-w-[236px] flex bg-blue mt-1 mb-16 md:mb-20 lg:mb-[97px] bg-opacity-[24%] border-blue items-center gap-4 mx-auto border border-solid font-bold text-center text-white text-xl lg:text-2xl leading-140">Get
+                    Started! <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.1719 0.709961C18.5938 0.709961 23.7969 5.91309 23.7969 12.335C23.7969 18.7568 18.5938 23.96 12.1719 23.96C5.75 23.96 0.546875 18.7568 0.546875 12.335C0.546875 5.91309 5.75 0.709961 12.1719 0.709961ZM17.5625 13.46C18.3594 13.0381 18.3594 11.96 17.5625 11.4912L9.3125 6.47559C8.5625 6.10059 7.67188 6.61621 7.67188 7.45996V17.21C7.67188 18.1006 8.5625 18.6162 9.3125 18.1943L17.5625 13.46Z"
+                                fill="white" />
+                        </svg>
+                    </span> </button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container mx-auto px-4 xl:max-w-[1172px] pt-14 pb-[128px]">
+            <h2 class="text-black text-center text-3xl sm:text-4xl lg:text-5xl font-bold font-oxygen pb-4 leading-130">
+                Real success stories</h2>
+            <p class="text-lg sm:text-xl font-normal font-roboto max-w-[786px] mx-auto text-center leading-150 pb-8">
+                These
+                testimonials
+                highlight
+                how AI Automated Arbitrage can lead
+                to significant positive
+                changes
+                in the
+                lives of many canadian families.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-8">
+                <!-- Video Item 1 -->
+                <div>
+                    <div class="max-w-[362px] bg-light-black rounded-lg">
+                        <div class="relative video-wrapper" id="video-wrapper1" data-video-id="video1">
+                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 play-icon"
+                                src="./assets/images/svg/play-icon.svg" alt="Play Icon">
+                            <video id="video1" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
+                                poster="./assets/images/webp/melani-image.webp"
+                                src="./assets/videos/meeting-video.mp4"></video>
+                        </div>
+                        <p class="text-base font-semibold font-roboto text-white uppercase pt-5 pb-4 text-center">MELANI
+                            FROM
+                            TORONTO</p>
+                    </div>
+                </div>
+
+                <!-- Video Item 2 -->
+                <div>
+                    <div class="max-w-[362px] bg-light-black rounded-lg">
+                        <div class="relative video-wrapper" id="video-wrapper2" data-video-id="video2">
+                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 play-icon"
+                                src="./assets/images/svg/play-icon.svg" alt="Play Icon">
+                            <video id="video2" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
+                                poster="./assets/images/webp/alex-image.webp"
+                                src="./assets/videos/meeting-video.mp4"></video>
+                        </div>
+                        <p class="text-base font-semibold font-roboto text-white uppercase pt-5 pb-4 text-center">ALEX
+                            FROM
+                            HAMILTON</p>
+                    </div>
+                </div>
+
+                <!-- Video Item 3 -->
+                <div>
+                    <div class="max-w-[362px] bg-light-black rounded-lg">
+                        <div class="relative video-wrapper" id="video-wrapper3" data-video-id="video3">
+                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 play-icon"
+                                src="./assets/images/svg/play-icon.svg" alt="Play Icon">
+                            <video id="video3" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
+                                poster="./assets/images/webp/lily-image.webp"
+                                src="./assets/videos/meeting-video.mp4"></video>
+                        </div>
+                        <p class="text-base font-semibold font-roboto text-white uppercase pt-5 pb-4 text-center">LILLY
+                            FROM
+                            MONTREAL</p>
+                    </div>
+                </div>
+
+                <!-- Video Item 4 -->
+                <div>
+                    <div class="max-w-[362px] bg-light-black rounded-lg">
+                        <div class="relative video-wrapper" id="video-wrapper4" data-video-id="video4">
+                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 play-icon"
+                                src="./assets/images/svg/play-icon.svg" alt="Play Icon">
+                            <video id="video4" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
+                                poster="./assets/images/webp/hena-image.webp"
+                                src="./assets/videos/hena-video.mp4"></video>
+                        </div>
+                        <p class="text-base font-semibold font-roboto text-white uppercase pt-5 pb-4 text-center">hana
+                            FROM
+                            toronto</p>
+                    </div>
+                </div>
+
+                <!-- Video Item 5 -->
+                <div>
+                    <div class="max-w-[362px] bg-light-black rounded-lg">
+                        <div class="relative video-wrapper" id="video-wrapper5" data-video-id="video5">
+                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 play-icon"
+                                src="./assets/images/svg/play-icon.svg" alt="Play Icon">
+                            <video id="video5" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
+                                poster="./assets/images/webp/alex-brampton-image.webp"
+                                src="./assets/videos/alan-video.mp4"></video>
+                        </div>
+                        <p class="text-base font-semibold font-roboto text-white uppercase pt-5 pb-4 text-center">Alex
+                            FROM
+                            brampton</p>
+                    </div>
+                </div>
+
+                <!-- Video Item 6 -->
+                <div>
+                    <div class="max-w-[362px] bg-light-black rounded-lg">
+                        <div class="relative video-wrapper" id="video-wrapper6" data-video-id="video6">
+                            <img class="absolute top-1/2 left-1/2 cursor-pointer z-10 transform -translate-x-1/2 -translate-y-1/2 play-icon"
+                                src="./assets/images/svg/play-icon.svg" alt="Play Icon">
+                            <video id="video6" class="rounded-lg relative z-1 w-[363px] object-cover h-[214px]"
+                                poster="./assets/images/webp/sam-image.webp"
+                                src="./assets/videos/sam-video.mp4"></video>
+                        </div>
+                        <p class="text-base font-semibold font-roboto text-white pt-5 pb-4 uppercase text-center">Sam
+                            FROM markham</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/app.js"></script>
+    <!-- header-video -->
+    <script>
+        function playVideo(videoId, button) {
+            const video = document.getElementById(videoId);
+            video.play();
+            button.style.display = "none";
+
+            video.addEventListener("play", () => {
+                video.controls = true;
+            });
+
+            video.addEventListener("pause", () => {
+                video.controls = false;
+                button.style.display = "block";
+            });
+
+            video.addEventListener("ended", () => {
+                video.controls = false;
+                button.style.display = "block";
+            });
+        }
+
+        document.getElementById("playIcon").addEventListener("click", () => {
+            playVideo("header-video", document.getElementById("playIcon"));
+        });
+    </script>
+    <!-- success section video -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const videoWrappers = document.querySelectorAll('.video-wrapper');
+            let currentPlayingVideo = null;
+
+            videoWrappers.forEach(wrapper => {
+                wrapper.addEventListener('click', function () {
+                    const videoId = this.getAttribute('data-video-id');
+                    const videoElement = document.getElementById(videoId);
+
+                    if (currentPlayingVideo && currentPlayingVideo !== videoElement) {
+                        currentPlayingVideo.pause();
+                        currentPlayingVideo.currentTime = 0;
+                        currentPlayingVideo.parentElement.querySelector('.play-icon').style.display = 'block';
+                    }
+
+                    if (videoElement.paused) {
+                        videoElement.play();
+                        this.querySelector('.play-icon').style.display = 'none';
+                        currentPlayingVideo = videoElement;
+                    } else {
+                        videoElement.pause();
+                        videoElement.currentTime = 0;
+                        this.querySelector('.play-icon').style.display = 'block';
+                        currentPlayingVideo = null;
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+
+    </script>
+
+</body>
+
+</html>
