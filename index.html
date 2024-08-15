@@ -46,12 +46,20 @@
                         'light-green': '#3BFF00',
                         'green': '#01D61B',
                         'light-black': '#29333A',
+                        'dark-black': '#020507',
                         'light-white': '#F6F6F6',
+                        'light-gray': '#E0E0E0',
+                        'off-gray': '#E5E5E5',
+                        'dark-gray': '#E9E9E9',
+                        'gray': '#CCCCCC',
+                        'sky': '#CCEDFF',
                     },
                     fontSize: {
 
                         'custom-lg': '22px',
                         'custom-xl': '28px',
+                        'custom-3xl': '32px',
+                        'custom-4xl': '40px',
                     },
 
                     fontFamily: {
@@ -59,9 +67,15 @@
                         oxygen: ['Oxygen', 'sans-serif'],
                         oxanium: ['Oxanium', 'sans-serif'],
                         lato: ['Lato', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
                     },
                     boxShadow: {
                         'blue-button': '0px 4px 25px 0px #00BFFF',
+                        "form-button": "0px 2px 10px 0px #00000026"
+
+                    },
+                    backgroundImage: {
+                        "footer-line": "linear-gradient(91.34deg, rgba(0, 164, 255, 0) 0%, rgba(0, 164, 255, 0.35) 9.95%, #00A4FF 48.76%, rgba(0, 164, 255, 0.35) 87.72%, rgba(0, 164, 255, 0) 97.72%)"
                     },
                     lineHeight: {
                         '120': '120%',
@@ -78,7 +92,7 @@
 <body>
     <div class="mx-auto max-w-[1920px]">
         <header class="relative overflow-hidden">
-            <video autolay muted
+            <video autolay muted preload="auto"
                 class="absolute background-video top-0 max-w-[unset] max-md:h-full left-0 right-0 bottom-0 z-[-1]"
                 src="./assets/videos/particles.mp4"></video>
             <span class="absolute top-5 left-5 cursor-pointer"><svg width="14" height="11" viewBox="0 0 14 11"
@@ -90,8 +104,8 @@
             </span>
             <div class="container px-4 lg:px-3 mx-auto pt-4 md:pt-5">
                 <div class="relative">
-                    <img class="size-[116px] cursor-pointer mx-auto" src="./assets/images/svg/bottom-faced-arrow.svg"
-                        alt="page logo">
+                    <img class="size-20 md:size-[116px] cursor-pointer mx-auto"
+                        src="./assets/images/svg/bottom-faced-arrow.svg" alt="page logo">
                     <h3
                         class="text-2xl white-text-shadow uppercase pt-3 sm:text-4xl pb-3 font-semibold font-oxanium !leading-120 text-white text-center ">
                         AI
@@ -112,11 +126,13 @@
                         Watch the Video Below to Discover How</p>
                 </div>
                 <div class="flex justify-center relative">
-                    <div class="border-white border-[4px] rounded-md shadow-blue-button lg:rounded-3xl ">
-                        <div class="border border-light-black rounded-md  lg:rounded-3xl overflow-hidden">
-                            <video id="header-video" class=" max-w-[982px] object-cover w-full max-h-[553px]"
-                                src="./assets/videos/meeting-video.mp4" controls
-                                poster="./assets/images/webp/video-thumbnail.webp"></video>
+                    <div class="border border-blue lg:rounded-3xl">
+                        <div class="border-white border-[4px] rounded-md shadow-blue-button lg:rounded-3xl ">
+                            <div class="border border-light-black rounded-md  lg:rounded-3xl overflow-hidden">
+                                <video id="header-video" class=" max-w-[982px] object-cover w-full max-h-[553px]"
+                                    src="./assets/videos/meeting-video.mp4" controls
+                                    poster="./assets/images/webp/video-thumbnail.webp"></video>
+                            </div>
                         </div>
                     </div>
                     <span id="playIcon"
@@ -359,7 +375,7 @@
             </div>
         </section>
         <section class="relative overflow-hidden pb-14  lg:pb-[73px]">
-            <video autolay muted
+            <video autolay muted preload="auto"
                 class="absolute background-video top-0 max-w-[unset] max-md:h-full left-0 right-0 bottom-0 z-[-1]"
                 src="./assets/videos/particles.mp4"></video>
             <!-- <div id="particles-js"></div> -->
@@ -765,7 +781,7 @@
             </div>
         </section>
         <section class="relative overflow-hidden ">
-            <video autolay muted
+            <video autolay muted preload="auto"
                 class="absolute background-video top-0 max-lg:max-w-[unset] max-md:h-full left-0 right-0 bottom-0 z-[-1]"
                 src="./assets/videos/particles.mp4"></video>
             <div class="container mx-auto px-3 py-14 md:py-16 xl:py-[150px]">
@@ -953,6 +969,654 @@
                     </span> </button>
             </div>
         </section>
+        <!-- form section  -->
+        <section class="relative overflow-hidden">
+            <video autolay muted preload="auto"
+                class="absolute background-video top-0 max-w-[unset] max-md:h-full left-0 right-0 bottom-0 z-[-1]"
+                src="./assets/videos/particles.mp4"></video>
+            <div class="container overflow-hidden mx-auto px-4 py-14 lg:pt-[109px] lg:pb-[83px]">
+                <div class="max-w-[360px] sm:max-w-[505px] overflow-hidden mx-auto">
+                    <svg width="507" height="1" viewBox="0 0 507 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="path-1-inside-1_5273_685" fill="white">
+                            <path d="M0.705078 0H506.295V1H0.705078V0Z" />
+                        </mask>
+                        <path
+                            d="M506.295 -0.5H504.793V0.5H506.295V-0.5ZM502.791 -0.5H499.787V0.5H502.791V-0.5ZM497.785 -0.5H494.782V0.5H497.785V-0.5ZM492.779 -0.5H489.776V0.5H492.779V-0.5ZM487.773 -0.5H484.77V0.5H487.773V-0.5ZM482.768 -0.5H479.764V0.5H482.768V-0.5ZM477.762 -0.5H474.758V0.5H477.762V-0.5ZM472.756 -0.5H469.752V0.5H472.756V-0.5ZM467.75 -0.5H464.747V0.5H467.75V-0.5ZM462.744 -0.5H459.741V0.5H462.744V-0.5ZM457.738 -0.5H454.735V0.5H457.738V-0.5ZM452.733 -0.5H449.729V0.5H452.733V-0.5ZM447.727 -0.5H444.723V0.5H447.727V-0.5ZM442.721 -0.5H439.717V0.5H442.721V-0.5ZM437.715 -0.5H434.712V0.5H437.715V-0.5ZM432.709 -0.5H429.706V0.5H432.709V-0.5ZM427.703 -0.5H424.7V0.5H427.703V-0.5ZM422.698 -0.5H419.694V0.5H422.698V-0.5ZM417.692 -0.5H414.688V0.5H417.692V-0.5ZM412.686 -0.5H409.682V0.5H412.686V-0.5ZM407.68 -0.5H404.677V0.5H407.68V-0.5ZM402.674 -0.5H399.671V0.5H402.674V-0.5ZM397.668 -0.5H394.665V0.5H397.668V-0.5ZM392.663 -0.5H389.659V0.5H392.663V-0.5ZM387.657 -0.5H384.653V0.5H387.657V-0.5ZM382.651 -0.5H379.647V0.5H382.651V-0.5ZM377.645 -0.5H374.641V0.5H377.645V-0.5ZM372.639 -0.5H369.636V0.5H372.639V-0.5ZM367.633 -0.5H364.63V0.5H367.633V-0.5ZM362.627 -0.5H359.624V0.5H362.627V-0.5ZM357.622 -0.5H354.618V0.5H357.622V-0.5ZM352.616 -0.5H349.612V0.5H352.616V-0.5ZM347.61 -0.5H344.606V0.5H347.61V-0.5ZM342.604 -0.5H339.601V0.5H342.604V-0.5ZM337.598 -0.5H334.595V0.5H337.598V-0.5ZM332.592 -0.5H329.589V0.5H332.592V-0.5ZM327.587 -0.5H324.583V0.5H327.587V-0.5ZM322.581 -0.5H319.577V0.5H322.581V-0.5ZM317.575 -0.5H314.571V0.5H317.575V-0.5ZM312.569 -0.5H309.566V0.5H312.569V-0.5ZM307.563 -0.5H304.56V0.5H307.563V-0.5ZM302.557 -0.5H299.554V0.5H302.557V-0.5ZM297.551 -0.5H294.548V0.5H297.551V-0.5ZM292.546 -0.5H289.542V0.5H292.546V-0.5ZM287.54 -0.5H284.536V0.5H287.54V-0.5ZM282.534 -0.5H279.53V0.5H282.534V-0.5ZM277.528 -0.5H274.525V0.5H277.528V-0.5ZM272.522 -0.5H269.519V0.5H272.522V-0.5ZM267.516 -0.5H264.513V0.5H267.516V-0.5ZM262.511 -0.5H259.507V0.5H262.511V-0.5ZM257.505 -0.5H254.501V0.5H257.505V-0.5ZM252.499 -0.5H249.495V0.5H252.499V-0.5ZM247.493 -0.5H244.49V0.5H247.493V-0.5ZM242.487 -0.5H239.484V0.5H242.487V-0.5ZM237.481 -0.5H234.478V0.5H237.481V-0.5ZM232.475 -0.5H229.472V0.5H232.475V-0.5ZM227.47 -0.5H224.466V0.5H227.47V-0.5ZM222.464 -0.5H219.46V0.5H222.464V-0.5ZM217.458 -0.5H214.454V0.5H217.458V-0.5ZM212.452 -0.5H209.449V0.5H212.452V-0.5ZM207.446 -0.5H204.443V0.5H207.446V-0.5ZM202.44 -0.5H199.437V0.5H202.44V-0.5ZM197.434 -0.5H194.431V0.5H197.434V-0.5ZM192.429 -0.5H189.425V0.5H192.429V-0.5ZM187.423 -0.5H184.419V0.5H187.423V-0.5ZM182.417 -0.5H179.413V0.5H182.417V-0.5ZM177.411 -0.5H174.408V0.5H177.411V-0.5ZM172.405 -0.5H169.402V0.5H172.405V-0.5ZM167.399 -0.5H164.396V0.5H167.399V-0.5ZM162.393 -0.5H159.39V0.5H162.393V-0.5ZM157.388 -0.5H154.384V0.5H157.388V-0.5ZM152.382 -0.5H149.378V0.5H152.382V-0.5ZM147.376 -0.5H144.372V0.5H147.376V-0.5ZM142.37 -0.5H139.367V0.5H142.37V-0.5ZM137.364 -0.5H134.361V0.5H137.364V-0.5ZM132.358 -0.5H129.355V0.5H132.358V-0.5ZM127.352 -0.5H124.349V0.5H127.352V-0.5ZM122.347 -0.5H119.343V0.5H122.347V-0.5ZM117.341 -0.5H114.337V0.5H117.341V-0.5ZM112.335 -0.5H109.331V0.5H112.335V-0.5ZM107.329 -0.5H104.325V0.5H107.329V-0.5ZM102.323 -0.5H99.3196V0.5H102.323V-0.5ZM97.3173 -0.5H94.3138V0.5H97.3173V-0.5ZM92.3114 -0.5H89.3079V0.5H92.3114V-0.5ZM87.3055 -0.5H84.302V0.5H87.3055V-0.5ZM82.2997 -0.5H79.2962V0.5H82.2997V-0.5ZM77.2938 -0.5H74.2903V0.5H77.2938V-0.5ZM72.2879 -0.5H69.2845V0.5H72.2879V-0.5ZM67.2821 -0.5H64.2786V0.5H67.2821V-0.5ZM62.2762 -0.5H59.2727V0.5H62.2762V-0.5ZM57.2704 -0.5H54.2669V0.5H57.2704V-0.5ZM52.2645 -0.5H49.261V0.5H52.2645V-0.5ZM47.2587 -0.5H44.2552V0.5H47.2587V-0.5ZM42.2528 -0.5H39.2493V0.5H42.2528V-0.5ZM37.2469 -0.5H34.2434V0.5H37.2469V-0.5ZM32.2411 -0.5H29.2376V0.5H32.2411V-0.5ZM27.2352 -0.5H24.2317V0.5H27.2352V-0.5ZM22.2294 -0.5H19.2259V0.5H22.2294V-0.5ZM17.2235 -0.5H14.22V0.5H17.2235V-0.5ZM12.2177 -0.5H9.21414V0.5H12.2177V-0.5ZM7.21179 -0.5H4.20827V0.5H7.21179V-0.5ZM2.20595 -0.5H0.705078V0.5H2.20595V-0.5ZM506.295 -1H504.793V1H506.295V-1ZM502.791 -1H499.787V1H502.791V-1ZM497.785 -1H494.782V1H497.785V-1ZM492.779 -1H489.776V1H492.779V-1ZM487.773 -1H484.77V1H487.773V-1ZM482.768 -1H479.764V1H482.768V-1ZM477.762 -1H474.758V1H477.762V-1ZM472.756 -1H469.752V1H472.756V-1ZM467.75 -1H464.747V1H467.75V-1ZM462.744 -1H459.741V1H462.744V-1ZM457.738 -1H454.735V1H457.738V-1ZM452.733 -1H449.729V1H452.733V-1ZM447.727 -1H444.723V1H447.727V-1ZM442.721 -1H439.717V1H442.721V-1ZM437.715 -1H434.712V1H437.715V-1ZM432.709 -1H429.706V1H432.709V-1ZM427.703 -1H424.7V1H427.703V-1ZM422.698 -1H419.694V1H422.698V-1ZM417.692 -1H414.688V1H417.692V-1ZM412.686 -1H409.682V1H412.686V-1ZM407.68 -1H404.677V1H407.68V-1ZM402.674 -1H399.671V1H402.674V-1ZM397.668 -1H394.665V1H397.668V-1ZM392.663 -1H389.659V1H392.663V-1ZM387.657 -1H384.653V1H387.657V-1ZM382.651 -1H379.647V1H382.651V-1ZM377.645 -1H374.641V1H377.645V-1ZM372.639 -1H369.636V1H372.639V-1ZM367.633 -1H364.63V1H367.633V-1ZM362.627 -1H359.624V1H362.627V-1ZM357.622 -1H354.618V1H357.622V-1ZM352.616 -1H349.612V1H352.616V-1ZM347.61 -1H344.606V1H347.61V-1ZM342.604 -1H339.601V1H342.604V-1ZM337.598 -1H334.595V1H337.598V-1ZM332.592 -1H329.589V1H332.592V-1ZM327.587 -1H324.583V1H327.587V-1ZM322.581 -1H319.577V1H322.581V-1ZM317.575 -1H314.571V1H317.575V-1ZM312.569 -1H309.566V1H312.569V-1ZM307.563 -1H304.56V1H307.563V-1ZM302.557 -1H299.554V1H302.557V-1ZM297.551 -1H294.548V1H297.551V-1ZM292.546 -1H289.542V1H292.546V-1ZM287.54 -1H284.536V1H287.54V-1ZM282.534 -1H279.53V1H282.534V-1ZM277.528 -1H274.525V1H277.528V-1ZM272.522 -1H269.519V1H272.522V-1ZM267.516 -1H264.513V1H267.516V-1ZM262.511 -1H259.507V1H262.511V-1ZM257.505 -1H254.501V1H257.505V-1ZM252.499 -1H249.495V1H252.499V-1ZM247.493 -1H244.49V1H247.493V-1ZM242.487 -1H239.484V1H242.487V-1ZM237.481 -1H234.478V1H237.481V-1ZM232.475 -1H229.472V1H232.475V-1ZM227.47 -1H224.466V1H227.47V-1ZM222.464 -1H219.46V1H222.464V-1ZM217.458 -1H214.454V1H217.458V-1ZM212.452 -1H209.449V1H212.452V-1ZM207.446 -1H204.443V1H207.446V-1ZM202.44 -1H199.437V1H202.44V-1ZM197.434 -1H194.431V1H197.434V-1ZM192.429 -1H189.425V1H192.429V-1ZM187.423 -1H184.419V1H187.423V-1ZM182.417 -1H179.413V1H182.417V-1ZM177.411 -1H174.408V1H177.411V-1ZM172.405 -1H169.402V1H172.405V-1ZM167.399 -1H164.396V1H167.399V-1ZM162.393 -1H159.39V1H162.393V-1ZM157.388 -1H154.384V1H157.388V-1ZM152.382 -1H149.378V1H152.382V-1ZM147.376 -1H144.372V1H147.376V-1ZM142.37 -1H139.367V1H142.37V-1ZM137.364 -1H134.361V1H137.364V-1ZM132.358 -1H129.355V1H132.358V-1ZM127.352 -1H124.349V1H127.352V-1ZM122.347 -1H119.343V1H122.347V-1ZM117.341 -1H114.337V1H117.341V-1ZM112.335 -1H109.331V1H112.335V-1ZM107.329 -1H104.325V1H107.329V-1ZM102.323 -1H99.3196V1H102.323V-1ZM97.3173 -1H94.3138V1H97.3173V-1ZM92.3114 -1H89.3079V1H92.3114V-1ZM87.3055 -1H84.302V1H87.3055V-1ZM82.2997 -1H79.2962V1H82.2997V-1ZM77.2938 -1H74.2903V1H77.2938V-1ZM72.2879 -1H69.2845V1H72.2879V-1ZM67.2821 -1H64.2786V1H67.2821V-1ZM62.2762 -1H59.2727V1H62.2762V-1ZM57.2704 -1H54.2669V1H57.2704V-1ZM52.2645 -1H49.261V1H52.2645V-1ZM47.2587 -1H44.2552V1H47.2587V-1ZM42.2528 -1H39.2493V1H42.2528V-1ZM37.2469 -1H34.2434V1H37.2469V-1ZM32.2411 -1H29.2376V1H32.2411V-1ZM27.2352 -1H24.2317V1H27.2352V-1ZM22.2294 -1H19.2259V1H22.2294V-1ZM17.2235 -1H14.22V1H17.2235V-1ZM12.2177 -1H9.21414V1H12.2177V-1ZM7.21179 -1H4.20827V1H7.21179V-1ZM2.20595 -1H0.705078V1H2.20595V-1Z"
+                            fill="#00BFFF" mask="url(#path-1-inside-1_5273_685)" />
+                    </svg>
+                </div>
+                <h3
+                    class="blue-text-shadow text-2xl sm:text-4xl !leading-130 text-white text-center font-bold font-oxygen py-6 max-w-[600px] mx-auto">
+                    Ready To
+                    Get 24/7
+                    Access To The
+                    World's Most Profitable Strategy?</h3>
+                <p class="text-white text-xl sm:text-2xl font-normal font-roboto text-center !leading-140">AI Arbitrage
+                    is the
+                    smart choice for
+                    canadians in 2024</p>
+                <div
+                    class="bg-white mt-7 sm:mt-10 md:mt-12 lg:mt-[84px] flex flex-col min-[1420px]:flex-row min-[1420px]:w-[1316px] mx-auto rounded-3xl lg:pt-[105px] p-4 sm:p-12 md:p-14 lg:px-[88px] lg:pb-[73px]">
+                    <div class="max-w-[553px] mx-auto mb-12 min-[1420px]:mb-0">
+                        <p
+                            class="text-xl sm:text-3xl md:text-custom-4xl !leading-130 text-black font-bold font-oxygen pb-2.5">
+                            Thanks to AI
+                            Arbitrage, more
+                            than
+                            120,000 Canadians
+                            have already been able to afford:</p>
+                        <div class="flex gap-2 pb-2 items-center">
+                            <span>
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_5273_701)">
+                                        <path
+                                            d="M19.8469 10.5C19.8469 15.8516 15.4719 20.1875 10.1594 20.1875C4.80781 20.1875 0.471875 15.8516 0.471875 10.5C0.471875 5.1875 4.80781 0.8125 10.1594 0.8125C15.4719 0.8125 19.8469 5.1875 19.8469 10.5ZM9.02656 15.6562L16.2141 8.46875C16.4484 8.23438 16.4484 7.80469 16.2141 7.57031L15.3156 6.71094C15.0813 6.4375 14.6906 6.4375 14.4563 6.71094L8.59688 12.5703L5.82344 9.83594C5.58906 9.5625 5.19844 9.5625 4.96406 9.83594L4.06563 10.6953C3.83125 10.9297 3.83125 11.3594 4.06563 11.5938L8.12813 15.6562C8.3625 15.8906 8.79219 15.8906 9.02656 15.6562Z"
+                                            fill="#00A4FF" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_5273_701" x="0.472656" y="0.8125" width="21.375"
+                                            height="21.375" filterUnits="userSpaceOnUse"
+                                            color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dx="1" dy="1" />
+                                            <feGaussianBlur stdDeviation="0.5" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_5273_701" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5273_701"
+                                                result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                            <p class="text-black text-xl font-normal font-oxygen !leading-150">Pay off their mortgage
+                            </p>
+                        </div>
+                        <div class="flex gap-2 pb-2 items-center">
+                            <span>
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_5273_701)">
+                                        <path
+                                            d="M19.8469 10.5C19.8469 15.8516 15.4719 20.1875 10.1594 20.1875C4.80781 20.1875 0.471875 15.8516 0.471875 10.5C0.471875 5.1875 4.80781 0.8125 10.1594 0.8125C15.4719 0.8125 19.8469 5.1875 19.8469 10.5ZM9.02656 15.6562L16.2141 8.46875C16.4484 8.23438 16.4484 7.80469 16.2141 7.57031L15.3156 6.71094C15.0813 6.4375 14.6906 6.4375 14.4563 6.71094L8.59688 12.5703L5.82344 9.83594C5.58906 9.5625 5.19844 9.5625 4.96406 9.83594L4.06563 10.6953C3.83125 10.9297 3.83125 11.3594 4.06563 11.5938L8.12813 15.6562C8.3625 15.8906 8.79219 15.8906 9.02656 15.6562Z"
+                                            fill="#00A4FF" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_5273_701" x="0.472656" y="0.8125" width="21.375"
+                                            height="21.375" filterUnits="userSpaceOnUse"
+                                            color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dx="1" dy="1" />
+                                            <feGaussianBlur stdDeviation="0.5" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_5273_701" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5273_701"
+                                                result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                            <p class="text-black text-xl font-normal font-oxygen !leading-150"> Purchase modern cars
+
+                            </p>
+                        </div>
+                        <div class="flex gap-2 pb-2 items-center">
+                            <span>
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_5273_701)">
+                                        <path
+                                            d="M19.8469 10.5C19.8469 15.8516 15.4719 20.1875 10.1594 20.1875C4.80781 20.1875 0.471875 15.8516 0.471875 10.5C0.471875 5.1875 4.80781 0.8125 10.1594 0.8125C15.4719 0.8125 19.8469 5.1875 19.8469 10.5ZM9.02656 15.6562L16.2141 8.46875C16.4484 8.23438 16.4484 7.80469 16.2141 7.57031L15.3156 6.71094C15.0813 6.4375 14.6906 6.4375 14.4563 6.71094L8.59688 12.5703L5.82344 9.83594C5.58906 9.5625 5.19844 9.5625 4.96406 9.83594L4.06563 10.6953C3.83125 10.9297 3.83125 11.3594 4.06563 11.5938L8.12813 15.6562C8.3625 15.8906 8.79219 15.8906 9.02656 15.6562Z"
+                                            fill="#00A4FF" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_5273_701" x="0.472656" y="0.8125" width="21.375"
+                                            height="21.375" filterUnits="userSpaceOnUse"
+                                            color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dx="1" dy="1" />
+                                            <feGaussianBlur stdDeviation="0.5" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_5273_701" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5273_701"
+                                                result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                            <p class="text-black text-xl font-normal font-oxygen !leading-150">To finance their
+                                children's education</p>
+                        </div>
+                        <div class="flex gap-2 pb-2 items-center">
+                            <span>
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_5273_701)">
+                                        <path
+                                            d="M19.8469 10.5C19.8469 15.8516 15.4719 20.1875 10.1594 20.1875C4.80781 20.1875 0.471875 15.8516 0.471875 10.5C0.471875 5.1875 4.80781 0.8125 10.1594 0.8125C15.4719 0.8125 19.8469 5.1875 19.8469 10.5ZM9.02656 15.6562L16.2141 8.46875C16.4484 8.23438 16.4484 7.80469 16.2141 7.57031L15.3156 6.71094C15.0813 6.4375 14.6906 6.4375 14.4563 6.71094L8.59688 12.5703L5.82344 9.83594C5.58906 9.5625 5.19844 9.5625 4.96406 9.83594L4.06563 10.6953C3.83125 10.9297 3.83125 11.3594 4.06563 11.5938L8.12813 15.6562C8.3625 15.8906 8.79219 15.8906 9.02656 15.6562Z"
+                                            fill="#00A4FF" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_5273_701" x="0.472656" y="0.8125" width="21.375"
+                                            height="21.375" filterUnits="userSpaceOnUse"
+                                            color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dx="1" dy="1" />
+                                            <feGaussianBlur stdDeviation="0.5" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_5273_701" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5273_701"
+                                                result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                            <p class="text-black text-xl font-normal font-oxygen !leading-150">Quit a demanding job
+                            </p>
+                        </div>
+                        <div class="flex gap-2 pb-2 items-center">
+                            <span>
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_5273_701)">
+                                        <path
+                                            d="M19.8469 10.5C19.8469 15.8516 15.4719 20.1875 10.1594 20.1875C4.80781 20.1875 0.471875 15.8516 0.471875 10.5C0.471875 5.1875 4.80781 0.8125 10.1594 0.8125C15.4719 0.8125 19.8469 5.1875 19.8469 10.5ZM9.02656 15.6562L16.2141 8.46875C16.4484 8.23438 16.4484 7.80469 16.2141 7.57031L15.3156 6.71094C15.0813 6.4375 14.6906 6.4375 14.4563 6.71094L8.59688 12.5703L5.82344 9.83594C5.58906 9.5625 5.19844 9.5625 4.96406 9.83594L4.06563 10.6953C3.83125 10.9297 3.83125 11.3594 4.06563 11.5938L8.12813 15.6562C8.3625 15.8906 8.79219 15.8906 9.02656 15.6562Z"
+                                            fill="#00A4FF" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_5273_701" x="0.472656" y="0.8125" width="21.375"
+                                            height="21.375" filterUnits="userSpaceOnUse"
+                                            color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                            <feOffset dx="1" dy="1" />
+                                            <feGaussianBlur stdDeviation="0.5" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_5273_701" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5273_701"
+                                                result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                            <p class="text-black text-xl font-normal font-oxygen !leading-150">Provide financial support
+                                to their family and friends</p>
+                        </div>
+                        <div
+                            class="flex items-center flex-wrap gap-4 sm:gap-[30px] mt-8 sm:mt-12 md:mt-14 xl:mt-[90px] ">
+                            <img class="w-[211px] object-contain h-9" src="./assets/images/webp/investing-logo.webp"
+                                alt="companies-logo">
+                            <img class="w-[112px] object-cover h-9" src="./assets/images/webp/google-logo.webp"
+                                alt="companies-logo">
+                            <img class="w-[126px] object-cover h-9" src="./assets/images/webp/forbes-logo.webp"
+                                alt="companies-logo">
+                        </div>
+                    </div>
+                    <div class="min-[1420px]:ml-auto mx-auto min-w-[1420px]:mr-[unset] max-w-[528px] ">
+                        <div class="max-w-[528px] border border-off-gray rounded-[15px] overflow-hidden">
+                            <div class="bg-blue">
+                                <p
+                                    class="text-lg sm:text-xl font-bold font-oxygen px-2 sm:px-[30px] pb-6 pt-7 !leading-140 text-white">
+                                    Let AI
+                                    Secure Profits
+                                    with
+                                    Prime Arbitrage
+                                    Opportunities for
+                                    You!</p>
+                            </div>
+                            <div class="px-2 sm:px-[30px] pt-4">
+                                <form id="signupForm" class="w-full">
+                                    <div class="w-full gap-2 flex">
+                                        <div class="flex flex-col w-1/2">
+                                            <label class="text-base font-normal font-roboto text-black !leading-120"
+                                                for="firstName">First Name</label>
+                                            <input
+                                                class="max-w-[230px] border border-gray focus:border-transparent focus:outline-sky rounded-full px-4 mt-2 w-full sm:h-[52px] h-10 text-base font-normal font-roboto text-black !leading-120"
+                                                id="firstName" type="text">
+                                        </div>
+                                        <div class="flex flex-col w-1/2">
+                                            <label class="text-base font-normal font-roboto text-black !leading-120"
+                                                for="lastName">Last Name</label>
+                                            <input
+                                                class="max-w-[230px] border border-gray focus:border-transparent focus:outline-sky rounded-full px-4 mt-2 w-full sm:h-[52px] h-10 text-base font-normal font-roboto text-black !leading-120"
+                                                id="lastName" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full pt-2">
+                                        <label class="text-base font-normal font-roboto text-black !leading-120"
+                                            for="email">Email</label>
+                                        <input
+                                            class="border border-gray focus:border-transparent focus:outline-sky rounded-full px-4 mt-2 w-full sm:h-[52px] h-10 text-base font-normal font-roboto text-black !leading-120"
+                                            id="email" type="email">
+                                    </div>
+                                    <div class="flex flex-col w-full pt-2">
+                                        <label class="text-base font-normal font-roboto text-black !leading-120"
+                                            for="number">Number</label>
+                                        <div class="relative overflow-hidden sm:h-[52px] h-10 mt-2 rounded-full">
+                                            <input
+                                                class="border border-gray focus:border-transparent focus:outline-sky rounded-full ps-[107px] pr-4  w-full sm:h-[52px] h-10 text-base font-normal font-roboto text-black !leading-120"
+                                                id="number" type="number">
+                                            <div
+                                                class="flex absolute sm:h-14 h-10 top-0 left-0 items-center bg-gray gap-2.5">
+                                                <span class="ps-[14px]">
+                                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.94531 6.61133H26.0564V21.3891H1.94531V6.61133Z"
+                                                            fill="white" />
+                                                        <path
+                                                            d="M1.94531 6.61133H8.55642V21.3891H1.94531V6.61133ZM19.4453 6.61133H26.0564V21.3891H19.4453V6.61133Z"
+                                                            fill="#D22F27" />
+                                                        <path
+                                                            d="M14.0002 17.8891V15.9447V17.8891ZM14.0002 15.9447H16.6447L16.3336 15.1669L17.8891 13.6113V12.4447H16.7224L15.1669 14.0002V11.278L14.0002 10.1113M14.0002 15.9447H11.3558L11.6669 15.1669L10.1113 13.6113V12.4447H11.278L12.8336 14.0002V11.278L14.0002 10.1113"
+                                                            fill="#D22F27" />
+                                                        <path
+                                                            d="M14.0002 17.8891V15.9447M14.0002 15.9447H16.6447L16.3336 15.1669L17.8891 13.6113V12.4447H16.7224L15.1669 14.0002V11.278L14.0002 10.1113L12.8336 11.278V14.0002L11.278 12.4447H10.1113V13.6113L11.6669 15.1669L11.3558 15.9447H14.0002Z"
+                                                            stroke="#D22F27" stroke-width="0.777778"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M1.94531 6.61133H26.0564V21.3891H1.94531V6.61133Z"
+                                                            stroke="black" stroke-width="0.777778"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                <p class="text-black font-normal font-roboto text-base">
+                                                    +1
+                                                </p>
+                                                <span class="pr-1.5">
+                                                    <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.37461 0.845757H9.62461C9.70814 0.846019 9.79001 0.869056 9.86142 0.912389C9.93283 0.955721 9.99107 1.01771 10.0299 1.09168C10.0687 1.16565 10.0866 1.2488 10.0816 1.33218C10.0767 1.41556 10.0491 1.49601 10.0018 1.56488L5.87682 7.52321C5.70586 7.77026 5.29428 7.77026 5.12286 7.52321L0.997862 1.56488C0.950115 1.49616 0.922115 1.41566 0.916904 1.33214C0.911694 1.24862 0.929471 1.16527 0.968306 1.09115C1.00714 1.01702 1.06555 0.954953 1.13718 0.911691C1.20881 0.868429 1.29093 0.845625 1.37461 0.845757Z"
+                                                            fill="black" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit"
+                                        class="py-3 text-white shadow-form-button rounded-full mt-9 mb-3 bg-blue text-base w-full text-center font-bold !leading-150">Sign
+                                        Up</button>
+                                </form>
+                                <div id="popup"
+                                    class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inset-0 min-h-[400px] max-w-[500px] items-center justify-center bg-gray-900 bg-opacity-50 hidden">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                                        <p class="text-black text-lg">Form submitted successfully!</p>
+                                        <button onclick="closePopup()" id="closePopup"
+                                            class="mt-4 px-4 py-2 bg-blue text-white rounded-full">Close</button>
+                                    </div>
+                                </div>
+                                <p class="text-black font-bold font-oxygen text-xl !leading-130 text-center pb-5">4
+                                    Spots
+                                    Left
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between max-w-[335px] mx-auto pt-6 ">
+                            <div>
+                                <div
+                                    class="size-[60px] rounded-[15px] justify-start items-center flex border-[2px] border-blue">
+                                    <p class="text-custom-3xl mx-auto font-oxygen font-bold text-black !leading-120">
+                                        1</p>
+                                </div>
+                                <p class="text-black pt-2.5 text-base font-normal text-center font-roboto !leading-140">
+                                    Hour</p>
+                            </div>
+                            <div class="h-11">
+                                <p class="text-custom-3xl my-auto pt-2 font-oxygen font-bold text-blue !leading-120">:
+                                </p>
+                            </div>
+                            <div>
+                                <div
+                                    class="size-[60px] rounded-[15px] justify-start items-center flex border-[2px] border-blue">
+                                    <p class="text-custom-3xl mx-auto font-oxygen font-bold text-black !leading-120">
+                                        30</p>
+                                </div>
+                                <p class="text-black pt-2.5 text-base font-normal text-center font-roboto !leading-140">
+                                    Minutes</p>
+                            </div>
+                            <div class="h-11">
+                                <p class="text-custom-3xl my-auto pt-2 font-oxygen font-bold text-blue !leading-120">:
+                                </p>
+                            </div>
+                            <div>
+                                <div
+                                    class="size-[60px] rounded-[15px] justify-start items-center flex border-[2px] border-blue">
+                                    <p class="text-custom-3xl mx-auto font-oxygen font-bold text-black !leading-120">
+                                        00</p>
+                                </div>
+                                <p class="text-black pt-2.5 text-base font-normal text-center font-roboto !leading-140">
+                                    Seconds</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- commnts section  -->
+        <section class="xl:pt-24 md:py-16 py-14 lg:py-20 xl:pb-36 bg-white">
+            <div class="max-w-[1189px] mx-auto px-4">
+                <div class="flex mt-2 items-center justify-between">
+                    <p class="font-inter text-base !leading-130 md:text-lg lg:text-xl text-dark-black font-semibold">
+                        619 comments
+                    </p>
+                    <div class="flex items-center">
+                        <p
+                            class="font-inter !leading-130 text-base md:text-lg lg:text-xl text-dark-black font-semibold">
+                            Sort by:
+                        </p>
+                        <div class="px-4 border-[2px] ms-4 border-blue rounded-[3px]">
+                            <p
+                                class="px-0.5 !leading-130 font-inter text-base md:text-lg lg:text-xl text-dark-black font-semibold">
+                                Top
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-6 sm:mt-8 md:mt-12 lg:mt-16">
+                    <img class="md:size-[70px]  lg:size-[80px] xl:size-[91px] size-[50px]"
+                        src="./assets/images/webp/profile-image.webp" alt="profile-image" />
+                    <div
+                        class="flex w-full ms-3 md:ms-6 lg:ms-8 xl:ms-11 px-4 items-center rounded-full rounded-114 border border-black border-opacity-[48%]">
+                        <input type="text" class="outline-none w-full placeholder:font-inter px-3 border-0"
+                            placeholder="Add a comment.." />
+                        <img class="me-3 max-w-6 lg:max-w-9 xl:max-w-[42px] cursor-pointer"
+                            src="./assets/images/svg/send-icon.svg" alt="comment-post-icon" />
+                    </div>
+                </div>
+                <div class="flex items-start mt-6 sm:mt-8 md:mt-10 lg:mt-16 pt-1">
+                    <img class="md:max-w-[70px]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
+                        src="./assets/images/webp/james-image.webp" alt="james-jhonson-pic" />
+                    <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
+                        <p class="text-blue font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
+                            James Johnson
+                        </p>
+                        <p class="font-inter text-dark-black mt-2 font-normal text-sm sm:text-base !leading-150">
+                            Does this really work? How can I get started?
+                        </p>
+                        <div class="flex items-center mt-3">
+                            <p class="text-blue text-base !leading-130 font-semibold font-inter">
+                                Like. Reply
+                            </p>
+                            <p class="ms-4 font-inter text-base font-semibold text-dark-black opacity-70">
+                                98k · 23 hrs
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col border border-opacity-15 border-s border-l-0 border-b-0 border-t-0 border-e-0 mt-4 sm:mt-7 pt-2 border-black ps-3.5">
+                            <div class="flex items-start">
+                                <img class="max-w-8 md:max-w-10 lg:max-w-16" src="./assets/images/webp/mia-image.webp"
+                                    alt="mia-moore-pic" />
+                                <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
+                                    <p
+                                        class="text-blue font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
+                                        Mia Moore
+                                    </p>
+                                    <p
+                                        class="font-inter text-dark-black mt-2 max-w-[884px] font-normal text-sm md:text-base !leading-150">
+                                        Yes, it actually worked for me. Only 2 weeks and I have
+                                        just withdrawn my earned funds. I left my info in the
+                                        registration form and after 10 minutes, I received a call
+                                        from the support team, and they helped me with everything.
+                                    </p>
+                                    <div class="flex items-center mt-3">
+                                        <p class="text-blue text-base !leading-130 font-semibold font-inter">
+                                            Like. Reply
+                                        </p>
+                                        <p class="ms-4 font-inter text-base font-semibold text-dark-black opacity-70">
+                                            252 · 1 min
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-start mt-4 sm:mt-9 pt-0.5">
+                                <img class="max-w-8 md:max-w-10 lg:max-w-16"
+                                    src="./assets/images/webp/davit-profile-pic.webp" alt="david-villiams-pic" />
+                                <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
+                                    <p
+                                        class="text-blue font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
+                                        David Williams
+                                    </p>
+                                    <p
+                                        class="font-inter text-dark-black mt-2 max-w-[884px] font-normal text-sm md:text-base !leading-150">
+                                        Yup, same here. I signed up, and they called me after 7
+                                        minutes. Excellent service from Eric, the support guy, and
+                                        a quick 5-minute setup.
+                                    </p>
+                                    <div class="flex items-center mt-3">
+                                        <p class="text-blue text-base !leading-130 font-semibold font-inter">
+                                            Like. Reply
+                                        </p>
+                                        <p class="ms-4 font-inter text-base font-semibold text-dark-black opacity-70">
+                                            122 · 2 min
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start mt-5 md:mt-6 lg:mt-9">
+                    <img class="md:max-w-[70px]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
+                        src="./assets/images/webp/olivia-profile-image.webp" alt="olivia-anderson" />
+                    <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
+                        <p class="text-blue font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
+                            Olivia Anderson
+                        </p>
+                        <p class="font-inter text-dark-black mt-2 font-normal text-sm sm:text-base !leading-150">
+                            I was finally able to buy a new car. Not life but a dream ... But dreams come true)))
+                        </p>
+                        <div class="flex items-center mt-3">
+                            <p class="text-blue text-base !leading-130 font-semibold font-inter">
+                                Like. Reply
+                            </p>
+                            <p class="ms-4 font-inter text-base font-semibold text-dark-black opacity-70">
+                                387 · 3 hrs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start mt-5 md:mt-6 lg:mt-9">
+                    <img class="md:max-w-[70px]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
+                        src="./assets/images/webp/andrew-profile-image.webp" alt="andrew-image" />
+                    <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
+                        <p class="text-blue font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
+                            Andrew Harris
+                        </p>
+                        <p class="font-inter text-dark-black mt-2 font-normal text-sm sm:text-base !leading-150">
+                            Now I have the opportunity to go on holiday this year :) And the buzz itself is that I will
+                            rest, and the
+                            system will earn day and night. This is just a fairy tale! <span
+                                class="text-blue font-semibold ">See
+                                more</span>
+                        </p>
+                        <div class="flex items-center mt-3">
+                            <p class="text-blue text-base !leading-130 font-semibold font-inter">
+                                Like. Reply
+                            </p>
+                            <p class="ms-4 font-inter text-base font-semibold text-dark-black opacity-70">
+                                2497 · 2 hrs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start mt-5 md:mt-6 lg:mt-9">
+                    <img class="md:max-w-[70px]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
+                        src="./assets/images/webp/isabella-profile-image.webp" alt="issabela-pic" />
+                    <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
+                        <p class="text-blue font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
+                            Isabella Harris
+                        </p>
+                        <p class="font-inter text-dark-black mt-2 font-normal text-sm sm:text-base !leading-150">
+                            I signed up last week and have already earned CAD $2,800! I recommend to everyone.
+                        </p>
+                        <div class="flex items-center mt-3">
+                            <p class="text-blue text-base !leading-130 font-semibold font-inter">
+                                Like. Reply
+                            </p>
+                            <p class="ms-4 font-inter text-base font-semibold text-dark-black opacity-70">
+                                430 · 4 hrs
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col border border-opacity-15 border-s border-l-0 border-b-0 border-t-0 border-e-0 mt-4 sm:mt-7 pt-2 border-black ps-3.5">
+                            <div class="flex items-start">
+                                <img class="max-w-8 md:max-w-10 lg:max-w-16" src="./assets/images/webp/marry-image.webp"
+                                    alt="mary-smith-pic" />
+                                <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
+                                    <p
+                                        class="text-blue font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
+                                        Mary Smith
+                                    </p>
+                                    <p
+                                        class="font-inter text-dark-black mt-2 max-w-[884px] font-normal text-sm md:text-base !leading-150">
+                                        Just signed up, people, wish me good luck! ... <span
+                                            class="text-blue font-semibold">See
+                                            More</span>
+                                    </p>
+                                    <div class="flex items-center mt-3">
+                                        <p class="text-blue text-base !leading-130 font-semibold font-inter">
+                                            Like. Reply
+                                        </p>
+                                        <p class="ms-4 font-inter text-base font-semibold text-dark-black opacity-70">
+                                            99 · 27 min
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-start mt-4 sm:mt-9 pt-0.5">
+                                <img class="max-w-8 md:max-w-10 lg:max-w-16" src="./assets/images/webp/anna-image.webp"
+                                    alt="anna-brown-pic" />
+                                <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
+                                    <p
+                                        class="text-blue font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
+                                        Anna Brown
+                                    </p>
+                                    <p
+                                        class="font-inter text-dark-black mt-2 max-w-[884px] font-normal text-sm md:text-base !leading-150">
+                                        I registered two days ago, the balance is already CAD$7,500, so I’m thinking of
+                                        asking for a
+                                        withdrawal, or is it too early? In fact, I did nothing, somehow I have earned it
+                                        automatically ...
+                                    </p>
+                                    <div class="flex items-center mt-3">
+                                        <p class="text-blue text-base !leading-130 font-semibold font-inter">
+                                            Like. Reply
+                                        </p>
+                                        <p class="ms-4 font-inter text-base font-semibold text-dark-black opacity-70">
+                                            64 · 30 min
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div
+                                class="flex mt-5 sm:mt-9 md:mt-12 justify-center items-center bg-dark-gray w-full max-w-[611px] py-2.5">
+                                <p class="text-center text-sm md:text-base text-off-white font-inter !leading-150 px-3">
+                                    Show 10 more
+                                    replies in this thread</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mb-1 items-start mt-7 md:mt-8 lg:mt-14 pt-0.5">
+                    <img class="md:max-w-[70px]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
+                        src="./assets/images/webp/sofila-profile-image.webp" alt="Sophia image">
+                    <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
+                        <p class="text-blue font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
+                            Sophia Martinez
+                        </p>
+                        <p
+                            class="font-inter max-w-[972px] text-dark-black mt-2 font-normal text-sm md:text-base !leading-150">
+                            I am in shock and my friends too! At first I thought that there was some kind of scam, it
+                            was not clear
+                            what and how it worked. But then the manager contacted me and explained everything in
+                            detail, it turned
+                            out to be very simple! I always worked hard and didn’t think that you could make money like
+                            that ..) In
+                            short, I bought a car. Good luck to everyone, I highly recommend this platform !!
+                        </p>
+                        <div class="flex items-center mt-3">
+                            <p class="text-blue text-base !leading-130 font-semibold font-inter">
+                                Like. Reply
+                            </p>
+                            <p class="ms-4 font-inter text-base font-semibold text-dark-black opacity-70">
+                                1584 · 5 hrs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- footer -->
+        <footer class="bg-light-black pt-9">
+            <div class="container xl:max-w-[1172px] mx-auto px-4">
+                <img class="size-12 sm:size-[72px] mx-auto" src="./assets/images/svg/bottom-faced-arrow.svg"
+                    alt="page-logo">
+                <p
+                    class="uppercase font-oxanium text-center !leading-140 font-semibold text-base sm:text-lg md:text-custom-lg text-white white-text-shadow py-4">
+                    AI
+                    Arbitrage
+                    Method Pro</p>
+                <p
+                    class="text-sm sm:text-base font-normal font-oxygen !leading-150 text-white opacity-80 text-center mx-auto max-w-[261px]">
+                    Empowering Your
+                    Financial Future with Intelligent
+                    Investments</p>
+                <p class="text-white text-lg font-oxygen font-bold !leading-140 pt-6 pb-4 text-center">
+                    Disclaimer</p>
+                <p
+                    class="text-center font-normal text-sm sm:text-base opacity-80 text-white pb-4 sm:pb-10 md:pb-[52px]">
+                    This
+                    website
+                    is not a
+                    news agency,
+                    information website, or
+                    blog. It is a webpage aimed at promotional publications that use the technique of storytelling to
+                    illustrate the scope of the services and products offered. Therefore, the story told on this page is
+                    an infomercial or advertisement for informational and functional purposes, for an understanding of
+                    the potential of what is proposed general, risk warning. Investing activities involve a high level
+                    of risk and may result in the total loss of the amount invested. For this reason, these activities
+                    may not be suitable for every type of investor. You should not invest money that you cannot afford
+                    to lose.</p>
+                <div class="bg-footer-line h-[2px] w-full"></div>
+                <div class="flex justify-between py-7">
+                    <a class="text-xs text-center sm:text-base font-normal text-white opacity-80 !leading-150"
+                        href="#">Privacy
+                        Policy | Conditions</a>
+                    <a class="text-xs text-center sm:text-base font-normal text-white opacity-80 !leading-150"
+                        href="#">Report
+                        Abuse/ Spam |
+                        Copyright@2024</a>
+                </div>
+            </div>
+        </footer>
     </div>
 
 
@@ -1004,8 +1668,36 @@
             ]
         });
     </script>
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function (event) {
+            event.preventDefault();
 
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var email = document.getElementById('email').value;
+            var number = document.getElementById('number').value;
 
+            if (firstName === '' || lastName === '' || email === '') {
+                alert('All fields are required!');
+                return;
+            }
+
+            // Clear the input fields
+            document.getElementById('firstName').value = '';
+            document.getElementById('lastName').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('number').value = '';
+
+            // Show the popup
+            document.getElementById('popup').style.display = 'block';
+            document.body.classList.add('overflow-hidden');
+        });
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.body.classList.remove('overflow-hidden');
+        }
+    </script>
 </body>
 
 </html>
