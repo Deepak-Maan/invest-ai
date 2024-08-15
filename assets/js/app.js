@@ -1,6 +1,6 @@
-// success section video
 document.addEventListener("DOMContentLoaded", function () {
   const videoWrappers = document.querySelectorAll(".video-wrapper");
+  const backgroundVideos = document.querySelectorAll(".background-video");
   let currentPlayingVideo = null;
 
   videoWrappers.forEach((wrapper) => {
@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const videoId = this.getAttribute("data-video-id");
       const videoElement = document.getElementById(videoId);
 
+      // Only pause and reset non-background videos
       if (currentPlayingVideo && currentPlayingVideo !== videoElement) {
         currentPlayingVideo.pause();
         currentPlayingVideo.currentTime = 0;
@@ -28,29 +29,35 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-});
 
-//  header-video
-function playVideo(videoId, button) {
-  const video = document.getElementById(videoId);
-  video.play();
-  button.style.display = "none";
+  function playVideo(videoElement, playIcon) {
+    videoElement.play();
+    playIcon.style.display = "none";
 
-  video.addEventListener("play", () => {
-    video.controls = true;
+    videoElement.addEventListener("play", () => {
+      videoElement.controls = true;
+    });
+
+    videoElement.addEventListener("pause", () => {
+      videoElement.controls = false;
+      playIcon.style.display = "block";
+    });
+
+    videoElement.addEventListener("ended", () => {
+      videoElement.controls = false;
+      playIcon.style.display = "block";
+    });
+  }
+
+  document.getElementById("playIcon").addEventListener("click", () => {
+    playVideo(
+      document.getElementById("header-video"),
+      document.getElementById("playIcon")
+    );
   });
 
-  video.addEventListener("pause", () => {
-    video.controls = false;
-    button.style.display = "block";
+  // Ensure background videos keep running
+  backgroundVideos.forEach((video) => {
+    video.play();
   });
-
-  video.addEventListener("ended", () => {
-    video.controls = false;
-    button.style.display = "block";
-  });
-}
-
-document.getElementById("playIcon").addEventListener("click", () => {
-  playVideo("header-video", document.getElementById("playIcon"));
 });
